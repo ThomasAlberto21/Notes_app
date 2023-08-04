@@ -5,4 +5,9 @@ const view = new NotesView(app, {
   onNoteAdd() {
     console.log("note add");
   },
+
+  onNoteEdit(newTitle, newBody) {
+    console.log(newTitle);
+    console.log(newBody);
+  },
 });
