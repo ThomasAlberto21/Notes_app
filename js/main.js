@@ -1,5 +1,8 @@
-import NotesAPI from "./NotesAPI.js";
+import NotesView from "./NotesView.js";
 
-NotesAPI.deleteNote(93310);
-
-console.log(NotesAPI.getAllNotes());
+const app = document.getElementById("app");
+const view = new NotesView(app, {
+  onNoteAdd() {
+    console.log("note add");
+  },
+});
